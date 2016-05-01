@@ -1,1 +1,23 @@
-<h1>Coming soon</h1>
+<!DOCTYPE html>
+<html lang="en" ng-app="galileo">
+<head>
+    <meta charset="UTF-8">
+    <title>Galileo project</title>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="app.core.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.route.js"></script>
+
+    <script src="layout/sidebar/sidebar.ctrl.js"></script>
+    <script src="layout/pages/pages.ctrl.js"></script>
+</head>
+<body ng-controller="bodyCtrl as vm">
+    <div>
+        <div ng-include="vm.sidebarUrl"></div>
+        <div class="main" ng-view></div>
+    </div>
+</body>
+</html>
