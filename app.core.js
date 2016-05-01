@@ -8,7 +8,7 @@
         .module("galileo.core" , [])
         .controller("bodyCtrl", bodyCtrl);
 
-    function bodyCtrl($location) {
+    function bodyCtrl() {
         var vm = this;
 
         vm.sidebarUrl = "layout/sidebar/sidebar.tpl.html";
