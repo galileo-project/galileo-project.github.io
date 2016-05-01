@@ -17,7 +17,19 @@
 <body ng-controller="bodyCtrl as vm">
     <div>
         <div ng-include="vm.sidebarUrl"></div>
-        <div class="main" ng-view></div>
+        <div class="main" ng-view>
+            <noscript>
+                <div style="width: 60%; margin: auto;">
+                    <div>
+                        <h1>Oops!</h1>
+                        <p>Looks like you have JavaScript disabled.</p>
+                        <p>The Galileo dockyard webclient needs JavaScript to work properly.</p>
+                        <h2>Please enable JavaScript to get the best Galileo dockyard experience.</h2>
+                        <h3>Thank you!</h3>
+                    </div>
+                </div>
+            </noscript>
+        </div>
     </div>
 </body>
 </html>
