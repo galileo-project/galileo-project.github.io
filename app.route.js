@@ -42,6 +42,11 @@
                 controller:   "pagesCtrl",
                 controllerAs: "async"
             })
+            .when("/pyut",{
+                templateUrl:  "layout/pages/pyut.tpl.html",
+                controller:   "pagesCtrl",
+                controllerAs: "pyut"
+            })
             .otherwise("/");
     }
 })();
