@@ -47,6 +47,11 @@
                 controller:   "pagesCtrl",
                 controllerAs: "pyut"
             })
+            .when("/sas",{
+                templateUrl:  "layout/pages/sas.tpl.html",
+                controller:   "pagesCtrl",
+                controllerAs: "sas"
+            })
             .otherwise("/");
     }
 })();
